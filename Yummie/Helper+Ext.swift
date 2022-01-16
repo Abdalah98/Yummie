@@ -20,18 +20,18 @@ extension  UIViewController {
         })
     }
     
-    
-    func showLoadingView(){
-        DispatchQueue.main.async {
-            self.view.makeToastActivity(.center)
-        }
-    }
-    
-    func dismissLoadingView(){
-        DispatchQueue.main.async {
-            self.view.hideToastActivity()
-        }
-    }
+//    
+//    func showLoadingView(){
+//        DispatchQueue.main.async {
+//            self.view.makeToastActivity(.center)
+//        }
+//    }
+//    
+//    func dismissLoadingView(){
+//        DispatchQueue.main.async {
+//            self.view.hideToastActivity()
+//        }
+//    }
     
     func goSafari(urlString: String){
     guard let url = URL(string:urlString ) else {return}

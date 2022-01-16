@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCell" id="gTV-IL-0wX" customClass="OnboardingCell" customModule="Yummie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="560"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="560"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jdU-k4-K0f">
+                        <rect key="frame" x="0.0" y="0.0" width="331" height="473"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OaK-tg-8i8">
+                        <rect key="frame" x="0.0" y="473" width="331" height="71"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsG-2Y-B2w">
+                                <rect key="frame" x="8" y="0.0" width="315" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bC-Px-2kE">
+                                <rect key="frame" x="8" y="53" width="315" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1bC-Px-2kE" secondAttribute="trailing" constant="8" id="FpM-Lv-mLp"/>
+                            <constraint firstAttribute="trailing" secondItem="fsG-2Y-B2w" secondAttribute="trailing" constant="8" id="MHY-wn-khd"/>
+                            <constraint firstItem="fsG-2Y-B2w" firstAttribute="leading" secondItem="OaK-tg-8i8" secondAttribute="leading" constant="8" id="Yg2-SV-P3t"/>
+                            <constraint firstAttribute="bottom" secondItem="1bC-Px-2kE" secondAttribute="bottom" id="u0u-Xv-fz0"/>
+                            <constraint firstItem="fsG-2Y-B2w" firstAttribute="top" secondItem="OaK-tg-8i8" secondAttribute="top" id="u4n-Uc-s6H"/>
+                            <constraint firstItem="1bC-Px-2kE" firstAttribute="leading" secondItem="OaK-tg-8i8" secondAttribute="leading" constant="8" id="zIC-AR-VKc"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="OaK-tg-8i8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KgJ-Ep-4Et"/>
+                <constraint firstAttribute="bottom" secondItem="OaK-tg-8i8" secondAttribute="bottom" constant="16" id="V6O-NB-FW4"/>
+                <constraint firstItem="OaK-tg-8i8" firstAttribute="top" secondItem="jdU-k4-K0f" secondAttribute="bottom" id="eVA-FG-juz"/>
+                <constraint firstAttribute="trailing" secondItem="OaK-tg-8i8" secondAttribute="trailing" id="j1s-17-S5L"/>
+                <constraint firstItem="jdU-k4-K0f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kEf-WU-lR9"/>
+                <constraint firstItem="jdU-k4-K0f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qZX-PH-SUb"/>
+                <constraint firstAttribute="trailing" secondItem="jdU-k4-K0f" secondAttribute="trailing" id="qzY-am-Axp"/>
+            </constraints>
+            <size key="customSize" width="331" height="560"/>
+            <connections>
+                <outlet property="slideDescriptionLabel" destination="1bC-Px-2kE" id="KOn-U0-4YV"/>
+                <outlet property="slideImageView" destination="jdU-k4-K0f" id="aFF-RZ-ZP1"/>
+                <outlet property="slideTitleLabel" destination="fsG-2Y-B2w" id="XAL-Oo-nPj"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="126.5625"/>
+        </collectionViewCell>
+    </objects>
+</document>

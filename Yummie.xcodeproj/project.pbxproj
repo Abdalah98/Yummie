@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B2D7EC682792A2A300889D7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7EC672792A2A300889D7B /* AppDelegate.swift */; };
-		B2D7EC6C2792A2A300889D7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7EC6B2792A2A300889D7B /* ViewController.swift */; };
+		B2D7EC6C2792A2A300889D7B /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7EC6B2792A2A300889D7B /* OnBoardingVC.swift */; };
 		B2D7EC6F2792A2A300889D7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D7EC6D2792A2A300889D7B /* Main.storyboard */; };
 		B2D7EC712792A2A600889D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D7EC702792A2A600889D7B /* Assets.xcassets */; };
 		B2D7EC742792A2A600889D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D7EC722792A2A600889D7B /* LaunchScreen.storyboard */; };
@@ -20,12 +20,15 @@
 		B2D7EC982792A4C100889D7B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7EC902792A4C100889D7B /* UIView.swift */; };
 		B2D7EC992792A4C100889D7B /* date+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7EC912792A4C100889D7B /* date+EXT.swift */; };
 		B2D7EC9A2792A4C100889D7B /* ResoneError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7EC922792A4C100889D7B /* ResoneError.swift */; };
+		B2FB081127939C05004D7633 /* OnBoardingSlid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB081027939C05004D7633 /* OnBoardingSlid.swift */; };
+		B2FB081627939CD2004D7633 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB081427939CD2004D7633 /* OnboardingCell.swift */; };
+		B2FB081727939CD2004D7633 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FB081527939CD2004D7633 /* OnboardingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2D7EC642792A2A300889D7B /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D7EC672792A2A300889D7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2D7EC6B2792A2A300889D7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2D7EC6B2792A2A300889D7B /* OnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
 		B2D7EC6E2792A2A300889D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2D7EC702792A2A600889D7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2D7EC732792A2A600889D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		B2D7EC902792A4C100889D7B /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B2D7EC912792A4C100889D7B /* date+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "date+EXT.swift"; sourceTree = "<group>"; };
 		B2D7EC922792A4C100889D7B /* ResoneError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResoneError.swift; sourceTree = "<group>"; };
+		B2FB081027939C05004D7633 /* OnBoardingSlid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlid.swift; sourceTree = "<group>"; };
+		B2FB081427939CD2004D7633 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		B2FB081527939CD2004D7633 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +76,14 @@
 		B2D7EC662792A2A300889D7B /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
-				B2D7EC9D2792A4D700889D7B /* Utilits */,
+				B2FB081327939C7A004D7633 /* CustomView */,
 				B2D7EC7F2792A3F400889D7B /* Delegate */,
 				B2D7EC842792A42000889D7B /* Networking */,
-				B2D7EC832792A41700889D7B /* Extention */,
 				B2D7EC822792A41100889D7B /* Model */,
 				B2D7EC872792A45600889D7B /* Controller */,
 				B2D7EC862792A44300889D7B /* StroyBoard */,
+				B2D7EC832792A41700889D7B /* Extention */,
+				B2D7EC9D2792A4D700889D7B /* Utilits */,
 				B2D7EC7C2792A3D100889D7B /* Supporting */,
 			);
 			path = Yummie;
@@ -103,6 +110,7 @@
 		B2D7EC822792A41100889D7B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2FB081027939C05004D7633 /* OnBoardingSlid.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -137,7 +145,7 @@
 		B2D7EC872792A45600889D7B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B2D7EC6B2792A2A300889D7B /* ViewController.swift */,
+				B2D7EC6B2792A2A300889D7B /* OnBoardingVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -150,6 +158,15 @@
 				B2D7EC922792A4C100889D7B /* ResoneError.swift */,
 			);
 			name = Utilits;
+			sourceTree = "<group>";
+		};
+		B2FB081327939C7A004D7633 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B2FB081427939CD2004D7633 /* OnboardingCell.swift */,
+				B2FB081527939CD2004D7633 /* OnboardingCell.xib */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +228,7 @@
 			files = (
 				B2D7EC742792A2A600889D7B /* LaunchScreen.storyboard in Resources */,
 				B2D7EC712792A2A600889D7B /* Assets.xcassets in Resources */,
+				B2FB081727939CD2004D7633 /* OnboardingCell.xib in Resources */,
 				B2D7EC6F2792A2A300889D7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,11 +242,13 @@
 			files = (
 				B2D7EC982792A4C100889D7B /* UIView.swift in Sources */,
 				B2D7EC972792A4C100889D7B /* Helper+Ext.swift in Sources */,
+				B2FB081627939CD2004D7633 /* OnboardingCell.swift in Sources */,
 				B2D7EC9A2792A4C100889D7B /* ResoneError.swift in Sources */,
 				B2D7EC8A2792A4A200889D7B /* NetworkManger.swift in Sources */,
 				B2D7EC942792A4C100889D7B /* BetterSnappingLayout.swift in Sources */,
-				B2D7EC6C2792A2A300889D7B /* ViewController.swift in Sources */,
+				B2D7EC6C2792A2A300889D7B /* OnBoardingVC.swift in Sources */,
 				B2D7EC992792A4C100889D7B /* date+EXT.swift in Sources */,
+				B2FB081127939C05004D7633 /* OnBoardingSlid.swift in Sources */,
 				B2D7EC682792A2A300889D7B /* AppDelegate.swift in Sources */,
 				B2D7EC952792A4C100889D7B /* string+EXT.swift in Sources */,
 				B2D7EC962792A4C100889D7B /* Constant.swift in Sources */,
@@ -380,7 +400,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5U6M2GDVA;
-				INFOPLIST_FILE = Yummie/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Yummie/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,7 +419,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5U6M2GDVA;
-				INFOPLIST_FILE = Yummie/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Yummie/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

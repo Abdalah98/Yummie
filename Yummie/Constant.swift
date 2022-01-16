@@ -21,11 +21,16 @@ enum URLS {
 }
 
 
-
-
 enum Constant {
     
-    static let browseHeaderHorizontalCell  			= "BrowseHeaderHorizontalCell"
+ //   static let OnboardingCell              = "OnboardingCell"
+    
+}
+
+
+enum Cell {
+    
+    static let onboardingCell  			= "OnboardingCell"
     
 }
 
