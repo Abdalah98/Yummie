@@ -8,7 +8,7 @@
 import UIKit
 
 class OnBoardingVC: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -22,35 +22,47 @@ class OnBoardingVC: UIViewController {
         
         didSet{
             pageControl.currentPage = currentPage
-
+            
             if currentPage == slides.count - 1 {
                 
                 nextBtn.setTitle("Get Started", for: .normal)
             }else{
                 nextBtn.setTitle("Next", for: .normal)
-
+                
             }
         }
     }
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pageControl.numberOfPages = slides.count
+        
         let nib = UINib(nibName: Cell.onboardingCell, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: Cell.onboardingCell)
-          }
-
-
+    }
+    
+    
     @IBAction func nextBtnAction(_ sender: Any) {
         if  currentPage == slides.count - 1{
-            
+            let controller = storyboard?.instantiateViewController(identifier: "Home") as! UINavigationController
+            controller.modalPresentationStyle = .fullScreen
+            controller.modalTransitionStyle = .flipHorizontal
+            //            UserDefaults.standard.hasOnboarded = true
+            present(controller, animated: true, completion: nil)
+//
+//            let storyBoard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+//            let vc = storyBoard.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+//            vc.modalPresentationStyle = .fullScreen
+//            controller.modalTransitionStyle = .flipHorizontal
+//            self.navigationController?.pushViewController(vc, animated: true)
         }else{
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
-
-       
+        
+        
     }
 }
 

@@ -23,6 +23,8 @@
 		B2FB081127939C05004D7633 /* OnBoardingSlid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB081027939C05004D7633 /* OnBoardingSlid.swift */; };
 		B2FB081627939CD2004D7633 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB081427939CD2004D7633 /* OnboardingCell.swift */; };
 		B2FB081727939CD2004D7633 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FB081527939CD2004D7633 /* OnboardingCell.xib */; };
+		B2FB081F2793DFEC004D7633 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FB081E2793DFEC004D7633 /* Home.storyboard */; };
+		B2FB08222793E00F004D7633 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB08212793E00F004D7633 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		B2FB081027939C05004D7633 /* OnBoardingSlid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlid.swift; sourceTree = "<group>"; };
 		B2FB081427939CD2004D7633 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		B2FB081527939CD2004D7633 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
+		B2FB081E2793DFEC004D7633 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B2FB08212793E00F004D7633 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +80,8 @@
 		B2D7EC662792A2A300889D7B /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
-				B2FB081327939C7A004D7633 /* CustomView */,
 				B2D7EC7F2792A3F400889D7B /* Delegate */,
+				B2FB081327939C7A004D7633 /* CustomView */,
 				B2D7EC842792A42000889D7B /* Networking */,
 				B2D7EC822792A41100889D7B /* Model */,
 				B2D7EC872792A45600889D7B /* Controller */,
@@ -138,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				B2D7EC6D2792A2A300889D7B /* Main.storyboard */,
+				B2FB081E2793DFEC004D7633 /* Home.storyboard */,
 			);
 			name = StroyBoard;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				B2D7EC6B2792A2A300889D7B /* OnBoardingVC.swift */,
+				B2FB08212793E00F004D7633 /* HomeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 				B2D7EC742792A2A600889D7B /* LaunchScreen.storyboard in Resources */,
 				B2D7EC712792A2A600889D7B /* Assets.xcassets in Resources */,
 				B2FB081727939CD2004D7633 /* OnboardingCell.xib in Resources */,
+				B2FB081F2793DFEC004D7633 /* Home.storyboard in Resources */,
 				B2D7EC6F2792A2A300889D7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +251,7 @@
 				B2D7EC972792A4C100889D7B /* Helper+Ext.swift in Sources */,
 				B2FB081627939CD2004D7633 /* OnboardingCell.swift in Sources */,
 				B2D7EC9A2792A4C100889D7B /* ResoneError.swift in Sources */,
+				B2FB08222793E00F004D7633 /* HomeVC.swift in Sources */,
 				B2D7EC8A2792A4A200889D7B /* NetworkManger.swift in Sources */,
 				B2D7EC942792A4C100889D7B /* BetterSnappingLayout.swift in Sources */,
 				B2D7EC6C2792A2A300889D7B /* OnBoardingVC.swift in Sources */,
