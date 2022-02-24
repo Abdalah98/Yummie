@@ -39,4 +39,11 @@ extension  UIViewController {
     safariVC.preferredControlTintColor = .systemRed
     self.present(safariVC, animated: true)
     }
+    static var identifier:String{
+        return String(describing: self)
+    }
+    static func instantiate() -> Self{
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        return storyBoard.instantiateViewController(identifier: identifier) as! Self
+    }
 }

@@ -19,4 +19,7 @@ extension String {
         guard let date = self.convertToDate() else {return ""}
         return date.convertToMonthYearFormat()
     }
+    var asUrl:URL?{
+        return URL(string:self )
+    }
 }

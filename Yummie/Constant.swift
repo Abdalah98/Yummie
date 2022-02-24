@@ -30,8 +30,13 @@ enum Constant {
 
 enum Cell {
     
-    static let onboardingCell  			= "OnboardingCell"
-    
+    static let onboardingCell  		                	= "OnboardingCell"
+    static let categoryCollectionViewCell               = "CategoryCollectionViewCell"
+    static let dishPortraitCollectionViewCell           = "DishPortraitCollectionViewCell"
+    static let dishLandscapeCollectionViewCell          = "DishLandscapeCollectionViewCell"
+
 }
+
+
 
 
